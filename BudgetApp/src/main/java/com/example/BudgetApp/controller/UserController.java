@@ -1,7 +1,7 @@
-package com.example.BudgetApp.user.controller;
+package com.example.BudgetApp.controller;
 
-import com.example.BudgetApp.user.service.UserService;
-import com.example.BudgetApp.user.model.User;
+import com.example.BudgetApp.service.UserService;
+import com.example.BudgetApp.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -42,5 +42,8 @@ public class UserController {
     public ResponseEntity<HttpStatus> deleteUser(@PathVariable("id") UUID id) {
         return userService.deleteUser(id);
     }
+
+
+
 
 }

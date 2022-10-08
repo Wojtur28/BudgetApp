@@ -1,4 +1,4 @@
-package com.example.BudgetApp.user.model;
+package com.example.BudgetApp.model;
 
 import java.math.BigDecimal;
 import java.util.Date;

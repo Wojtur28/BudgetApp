@@ -1,7 +1,7 @@
-package com.example.BudgetApp.user.service;
+package com.example.BudgetApp.service;
 
-import com.example.BudgetApp.user.repository.UserRepository;
-import com.example.BudgetApp.user.model.User;
+import com.example.BudgetApp.repository.UserRepository;
+import com.example.BudgetApp.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

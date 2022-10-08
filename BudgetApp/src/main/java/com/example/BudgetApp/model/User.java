@@ -1,4 +1,4 @@
-package com.example.BudgetApp.user.model;
+package com.example.BudgetApp.model;
 
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
