@@ -1,7 +1,5 @@
-package com.example.BudgetApp.controller;
+package com.example.BudgetApp.user;
 
-import com.example.BudgetApp.service.UserService;
-import com.example.BudgetApp.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.example.BudgetApp.model;
+package com.example.BudgetApp.transaction;
 
 import java.math.BigDecimal;
 import java.util.Date;

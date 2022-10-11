@@ -1,4 +1,4 @@
-package com.example.BudgetApp.model;
+package com.example.BudgetApp.user;
 
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
@@ -25,10 +25,10 @@ public class User {
 
     @Column(name = "first_name")
     @NonNull
-    private String firstName;
+    private String userFirstName;
     @Column(name = "last_name")
     @NonNull
-    private String lastName;
+    private String userLastName;
     @Column(name = "email")
     @NonNull
     private String email;

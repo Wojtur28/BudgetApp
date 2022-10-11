@@ -1,7 +1,5 @@
-package com.example.BudgetApp.service;
+package com.example.BudgetApp.user;
 
-import com.example.BudgetApp.repository.UserRepository;
-import com.example.BudgetApp.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -48,7 +46,7 @@ public class UserService {
 
     public ResponseEntity<User> addUser(User user) {
         try {
-            User _user = userRepository.save(new User(user.getFirstName(), user.getLastName(), user.getEmail(), user.getPassword()));
+            User _user = userRepository.save(new User(user.getUserFirstName(), user.getUserLastName(), user.getEmail(), user.getPassword()));
             return new ResponseEntity<>(_user, HttpStatus.CREATED);
         } catch (Exception e) {
             log.info("createUser exception: "+ user.toString()+e.getMessage());
