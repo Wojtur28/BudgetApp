@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.UUID;
 
 @Data
@@ -25,16 +26,24 @@ public class User {
 
     @Column(name = "first_name")
     @NonNull
+    @NotBlank
     private String userFirstName;
+
     @Column(name = "last_name")
     @NonNull
+    @NotBlank
     private String userLastName;
+
     @Column(name = "email")
     @NonNull
+    @NotBlank
     private String email;
+
     @Column(name = "password")
     @NonNull
+    @NotBlank
     private String password;
+
 
 
 
