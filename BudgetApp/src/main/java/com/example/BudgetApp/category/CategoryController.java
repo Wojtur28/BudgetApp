@@ -31,12 +31,12 @@ public class CategoryController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Category> updateCategory(@PathVariable("id") UUID id, @RequestBody Category category) {
+    public ResponseEntity<Category> updateCategory(@PathVariable UUID id, @RequestBody Category category) {
         return categoryService.updateCategory(category);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<HttpStatus> deleteCategory(@PathVariable("id") UUID id) {
+    public ResponseEntity<HttpStatus> deleteCategory(@PathVariable UUID id) {
         return categoryService.deleteCategory(id);
     }
 }

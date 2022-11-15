@@ -21,7 +21,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> getUserById(UUID id) {
+    public ResponseEntity<User> getUserById(@PathVariable UUID id) {
         return userService.getUserById(id);
     }
 
@@ -32,12 +32,12 @@ public class UserController {
 
     //TODO: Delete "/{id}" from PutMapping and change this mapping
     @PutMapping("/{id}")
-    public ResponseEntity<User> updateUser(@PathVariable("id") UUID id, @RequestBody User user) {
+    public ResponseEntity<User> updateUser(@PathVariable UUID id, @RequestBody User user) {
         return userService.updateUser(user);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<HttpStatus> deleteUser(@PathVariable("id") UUID id) {
+    public ResponseEntity<HttpStatus> deleteUser(@PathVariable UUID id) {
         return userService.deleteUser(id);
     }
 
